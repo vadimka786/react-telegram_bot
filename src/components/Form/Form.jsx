@@ -24,7 +24,7 @@ const Form = () => {
     }, [country, city])
 
 
-    const onChangeCount = (e) => {
+    const onChangeCountry = (e) => {
         setCountry(e.target.value)
     }
 
@@ -44,7 +44,7 @@ const Form = () => {
             className={'input'} 
             type="text" placeholder={'Страна'} 
             value={country}
-            onChange={onChangeCount}
+            onChange={onChangeCountry}
             />
 
             <input 
