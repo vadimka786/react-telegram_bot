@@ -4,9 +4,9 @@ import { useTelegram } from '../../hooks/useTelegram';
 import './Form.css';
 
 const Form = () => {
-    const [country, setCountry] = UseState('');
-    const [city, setSity] = UseState('');
-    const [subject, setSubject] = UseState('physical');
+    const [country, setCountry] = useState('');
+    const [city, setSity] = useState('');
+    const [subject, setSubject] = useState('phisical');
 
     const {tg} = useTelegram();
     useEffect( () => {
